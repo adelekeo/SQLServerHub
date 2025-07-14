@@ -1,0 +1,10 @@
+image:
+  file: .gitpod.Dockerfile
+
+tasks:
+  - name: Start SQL Server
+    command: docker-compose up -d
+
+ports:
+  - port: 1433
+    onOpen: open-preview
